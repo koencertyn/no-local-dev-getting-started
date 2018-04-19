@@ -10,12 +10,12 @@ get "/" do
 end
 
 
-class Contact < ActiveRecord::Base
-  self.table_name = 'salesforce.Contact'
+class Account < ActiveRecord::Base
+  self.table_name = 'salesforce.Account'
 end
 
-get "/contacts" do
-  @contacts = Contact.all
+get "/accs" do
+  @accs = Account.all
   erb :index
 end
 
