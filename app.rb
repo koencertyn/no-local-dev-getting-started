@@ -9,9 +9,8 @@ get "/" do
   erb :home
 end
 
-
 class Contact < ActiveRecord::Base
-  self.table_name = 'salesforce.Account'
+  self.table_name = 'salesforce.contact'
 end
 
 get "/contacts" do
